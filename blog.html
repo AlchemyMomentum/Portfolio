@@ -26,7 +26,7 @@
             background-color: darkseagreen;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -58,11 +58,26 @@
             </div>
         </nav>
     </div>
+    <h6 class="text-center">lastModified:</h6>
+    <h6 id="lastModified" class="text-center"></h6>
     <!-- 16:9 aspect ratio -->
     <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://errinjohnson.github.io/"></iframe>
     </div>
 
 </body>
+<!-- Bootstrap core JavaScript -->
+<script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="bootstrap/node_modules/popper.js/dist/popper.min.js"></script>
+<script>
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+
+    var modify = document.lastModified;
+    var modifyStyle = document.getElementById("lastModified");
+    modifyStyle.innerHTML = modify;
+</script>
+<script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
