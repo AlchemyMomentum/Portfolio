@@ -12,57 +12,74 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-     
-    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <style>
+        body
+        {
+            font-family: 'Noto Serif', serif;
+            background-color: beige;
+        }
+        #serviceButton,#emailButton,#deviceButton,#informedButton
+        {
+            background-color: darkseagreen;
+        }
+          
+    </style>
+
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Internet of Things || Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Streaming Video || TV</a>
-                        <span class="sr-only">(current)</span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+    <div class="container" width="90%">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Internet of Things || Library</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Streaming Video || TV</a>
+                            <span class="sr-only">(current)</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div>
+            <h6 class="text-right">lastModified:</h6>
+            <h6 id="lastModified" class="text-right"></h6>
+            <h2 class="text-center font-italic">Streaming Video and TV</h2>
+            <h3 class="text-left font-italic">How to ...</h3>
+
+            <p class="lead text-centered">A basic || core pathway to setup a streaming service:</p>
+
+            <ul>
+                <li>Good Internet Connection, minimum of 5MB per device.</li>
+                <blockquote class="blockquote-footer">Consumer Reports, "Streaming Media", Last updated: April 2018
+                </blockquote>
+                <button type="button" class="btn btn-secondary bg-success" data-container="body" data-toggle="popover" data-placement="right" data-content="You’ll Need a Speed of at Least 5 Mbps.  This is the absolute minimum to support a high-def stream, and that’s adequate only if you are streaming to one device at a time. Most homes will need 10 Mbps or more, and the FCC recently updated its definition of broadband to 25 Mbps. Note: Regardless of how fast your connection is, picture quality may initially be poor but then improve after a minute or so as the service adjusts to the connection speed. Also, if you’re connecting via WiFi, your router also needs to support a decent speed."><cite>more info...</cite>
+
+                </button>
+                <li>Streaming Service, such as, Netflix or YouTube TV</li>
+                <li>Streaming Device, such as, Roku Stick or Firestick</li>
+                <li>Email to use as username for your streaming service.</li>
+                <li>Bank Card for paid subscriptions, only.</li>
+            </ul>
         </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div>
-
-        <h2 class="text-centered">Streaming Video and TV</h2>
-        <h3 class="text-centered">How to ...</h3>
-        <p class="lead text-centered">The basic rules and setups that are needed to set up a streaming service are listed here:</p>
-        
-        <ul>
-            <!--li>Good Internet Connection, minimum of 5MB per device.</li-->
-            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="You’ll Need a Speed of at Least 5 Mbps.  This is the absolute minimum to support a high-def stream, and that’s adequate only if you are streaming to one device at a time. Most homes will need 10 Mbps or more, and the FCC recently updated its definition of broadband to 25 Mbps. Note: Regardless of how fast your connection is, picture quality may initially be poor but then improve after a minute or so as the service adjusts to the connection speed. Also, if you’re connecting via WiFi, your router also needs to support a decent speed.">
-                <li>Good Internet Speed, 5MB per device.</li>
-            </button>
-            <li>Streaming Service, such as, Netflix or YouTube TV</li>
-            <li>Streaming Device, such as, Roku Stick or Firestick</li>
-            <li>Email to use as username for your streaming service.</li>
-            <li>Bank Card for paid subscriptions, only.</li>
-        </ul>
     </div>
 
     <div class="container" width="80%">
@@ -81,7 +98,7 @@
             </div-->
 
                 <!-- email modal -->
-                <button type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target=".bd-example-modal-lg">EMAIL</button>
+                <button id="emailButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target=".bd-example-modal-lg">EMAIL</button>
 
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -103,7 +120,7 @@
                 </div>
 
                 <!-- streaming services modal -->
-                <button type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#services">STREAMING SERVICES</button>
+                <button id="serviceButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#services">STREAMING SERVICES</button>
 
                 <div id="services" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -119,7 +136,7 @@
         <div class="row">
             <div class="col-lg-6 text-center mx-auto">
                 <!-- streaming devices modal -->
-                <button type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#devices">STREAMING DEVICES</button>
+                <button id="deviceButton"type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#devices">STREAMING DEVICES</button>
 
                 <div id="devices" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -134,7 +151,7 @@
                     </div>
                 </div>
                 <!-- informed decisons modal -->
-                <button type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#decisons">INFORMED DECISONS</button>
+                <button id="informedButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#decisons">INFORMED DECISONS</button>
 
                 <div id="decisons" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
@@ -151,16 +168,20 @@
             </div>
         </div>
     </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="bootstrap/node_modules/popper.js/dist/popper.min.js"></script>
     <script>
-         $(function() {
+        $(function() {
             $('[data-toggle="popover"]').popover()
         })
+        var modify = document.lastModified;
+        var modifyStyle = document.getElementById("lastModified");
+        modifyStyle.innerHTML = modify;
     </script>
-    
-    
+
+
     <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
