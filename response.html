@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>IoT - Blog</title>
+    <title>IoT</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" width="90%">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
@@ -44,43 +44,41 @@
                         <li class="nav-item">
                             <a class="nav-link" href="case.html">Case | Issues | Workaround</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="blog.html">BLOG</a>
-                            <span class="sr-only">(current)</span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">STREAMING MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-contact.html">ABOUT | CONTACT</a>
+                            <a class="nav-link active" href="about-contact.html">ABOUT | CONTACT</a>
+                            <span class="sr-only">(current)</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-
-    <h6 class="text-center">lastModified:</h6>
-    <h6 id="lastModified" class="text-center"></h6>
-    <!-- 16:9 aspect ratio -->
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://errinjohnson.github.io/"></iframe>
+    <div class="container">
+        <div class="col-lg-6 text-center mx-auto">
+            <h2 class="text-info">Sorry, Message Not Sent!</h2>
+            <h2 class="text-info">Contact Form in Progress...</h2>
+        </div>
     </div>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/node_modules/popper.js/dist/popper.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
 
+        var modify = document.lastModified;
+        var modifyStyle = document.getElementById("lastModified");
+        modifyStyle.innerHTML = modify;
+    </script>
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<!-- Bootstrap core JavaScript -->
-<script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="bootstrap/node_modules/popper.js/dist/popper.min.js"></script>
-<script>
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    })
-
-    var modify = document.lastModified;
-    var modifyStyle = document.getElementById("lastModified");
-    modifyStyle.innerHTML = modify;
-</script>
-<script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
