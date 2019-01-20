@@ -2,34 +2,15 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>IoT</title>
-
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-    <style>
-        body
-        {
-            font-family: 'Noto Serif', serif;
-            background-color:azure;
-        }
-        #serviceButton,#emailButton,#deviceButton,#informedButton
-        {
-            background-color: darkseagreen;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon
-        {
-            background-color:green;
-        }
-    </style>
-
+    <link href="myCss.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,16 +42,13 @@
                 </div>
             </div>
         </nav>
-
         <!-- Page Content -->
         <div class="float-lg-left">
             <h6 class="text-center">lastModified:</h6>
             <h6 id="lastModified" class="text-center"></h6>
             <h2 class="text-center font-italic">Streaming Video and TV</h2>
             <h3 class="text-left font-italic">How to ...</h3>
-
             <p class="lead text-centered">A basic || core pathway to setup a streaming service:</p>
-
             <ul>
                 <li>Good Internet Connection, minimum of 5MB per device.</li>
                 <blockquote class="blockquote-footer">Consumer Reports, "Streaming Media", Last updated: April 2018
@@ -78,7 +56,6 @@
                 <button type="button" class="btn btn-secondary bg-success" data-container="body" data-toggle="popover"
                     data-placement="top" data-content="You’ll Need a Speed of at Least 5 Mbps.  This is the absolute minimum to support a high-def stream, and that’s adequate only if you are streaming to one device at a time. Most homes will need 10 Mbps or more, and the FCC recently updated its definition of broadband to 25 Mbps. Note: Regardless of how fast your connection is, picture quality may initially be poor but then improve after a minute or so as the service adjusts to the connection speed. Also, if you’re connecting via WiFi, your router also needs to support a decent speed."><cite>more
                         info...</cite>
-
                 </button>
                 <li>Streaming Service, such as, Netflix or YouTube TV</li>
                 <li>Streaming Device, such as, Roku Stick or Fire Stick</li>
@@ -87,12 +64,10 @@
             </ul>
         </div>
     </div>
-
     <div class="container" width="80%">
         <div class="row">
             <div class="col-lg-6 text-center mx-auto">
                 </div-->
-
                 <!-- email modal -->
                 <button id="emailButton" type="button" class="btn btn-primary pb-1 m-2 float-md-right" data-toggle="modal"
                     data-target=".bd-example-modal-lg">EMAIL</button>
@@ -115,7 +90,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- streaming services modal -->
                 <button id="serviceButton" type="button" class="btn btn-primary pb-1 m-2 float-md-right" data-toggle="modal"
                     data-target="#services">STREAMING SERVICES</button>
@@ -130,7 +104,6 @@
                                 3:49PM EST
                             </blockquote>
                             <img src="img/pc-mag-streaming-services.PNG" class="img-fluid" alt="Responsive image">
-
                         </div>
                     </div>
                 </div>
@@ -181,7 +154,6 @@
                                 <iframe src="https://www.cnet.com/videos/share/which-roku-player-should-you-buy/" width="480"
                                     height="270" frameBorder="0" seamless="seamless" allowFullScreen></iframe>
                             </div>
-
                             <!-- https://flipboard.com/@errinejohns2019/streaming-video-tv-pi9d5u4ry -->
                             <!-- https://www.consumerreports.org/streaming-media/streaming-sites-for-people-who-want-more-than-netflix  -->
                             <!-- https://www.consumerreports.org/cro/streaming-media/buying-guide/index.html -->
@@ -192,7 +164,7 @@
             </div>
         </div>
     </div>
-    <div class="container text-center mx-auto" width="80%">
+    <div id="carousel-container" class="container text-center mx-auto" width="80%">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -227,11 +199,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
     </div>
-
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="bootstrap/node_modules/popper.js/dist/popper.min.js"></script>
@@ -249,7 +217,6 @@
         })
     </script>
     <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>

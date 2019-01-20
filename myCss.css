@@ -1,0 +1,19 @@
+
+body
+{
+    font-family: 'Noto Serif', serif;
+    background-color:azure;
+}
+#serviceButton,#emailButton,#deviceButton,#informedButton
+{
+    background-color: darkseagreen;
+}
+#carousel-container
+{
+    margin-top: 4em;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+{
+    background-color:green;
+}
