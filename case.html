@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,18 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-    <style>
-        body
-        {
-            font-family: 'Noto Serif', serif;
-            background-color: beige;
-        }
-        #serviceButton,#emailButton,#deviceButton,#informedButton
-        {
-            background-color: darkseagreen;
-        }
-    </style>
-
+    <link href="myCss.css" rel="stylesheet">
 </head>
 
 <body>
@@ -58,15 +46,11 @@
         </nav>
     </div>
     <div class="container">
-        <h6 class="text-center">lastModified:</h6>
-        <h6 id="lastModified" class="text-center"></h6>
         <button id="serviceButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target="#services">CHROME
             - VIDEO NOT PLAYING</button>
         <div class="container" width="90%">
             <!-- Chrome Browser not playing videos modal -->
-
             <div class="text-center mx-auto">
-
                 <div id="services" class="modal fade bd-example-modal-lg float-right" tabindex="-1" role="dialog"
                     aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -83,6 +67,10 @@
             </div>
         </div>
     </div>
+    <footer>
+        <h6 class="text-success">lastModified:</h6>
+        <h6 id="lastModified" class="text-success"></h6>
+    </footer>
 </body>
 <!-- Bootstrap core JavaScript -->
 <script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
