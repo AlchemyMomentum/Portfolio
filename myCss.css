@@ -4,13 +4,28 @@ body
     font-family: 'Noto Serif', serif;
     background-color:azure;
 }
+footer
+{
+    padding-top: .5em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+}
+.top-body
+{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.middle-body
+{
+    padding-bottom: 2em;
+}
 #serviceButton,#emailButton,#deviceButton,#informedButton
 {
     background-color: darkseagreen;
 }
-#carousel-container
+.carousel-item img
 {
-    margin-top: 4em;
+    width:80%;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon

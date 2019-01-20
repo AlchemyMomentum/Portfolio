@@ -16,7 +16,8 @@
 <body>
     <div class="container" width="90%">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top rounded">
+
             <div class="container">
                 <a class="navbar-brand" href="#">Internet of Things || Library</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -43,34 +44,36 @@
             </div>
         </nav>
         <!-- Page Content -->
-        <div class="float-lg-left">
-            <h6 class="text-center">lastModified:</h6>
-            <h6 id="lastModified" class="text-center"></h6>
-            <h2 class="text-center font-italic">Streaming Video and TV</h2>
-            <h3 class="text-left font-italic">How to ...</h3>
-            <p class="lead text-centered">A basic || core pathway to setup a streaming service:</p>
-            <ul>
-                <li>Good Internet Connection, minimum of 5MB per device.</li>
-                <blockquote class="blockquote-footer">Consumer Reports, "Streaming Media", Last updated: April 2018
-                </blockquote>
-                <button type="button" class="btn btn-secondary bg-success" data-container="body" data-toggle="popover"
-                    data-placement="top" data-content="You’ll Need a Speed of at Least 5 Mbps.  This is the absolute minimum to support a high-def stream, and that’s adequate only if you are streaming to one device at a time. Most homes will need 10 Mbps or more, and the FCC recently updated its definition of broadband to 25 Mbps. Note: Regardless of how fast your connection is, picture quality may initially be poor but then improve after a minute or so as the service adjusts to the connection speed. Also, if you’re connecting via WiFi, your router also needs to support a decent speed."><cite>more
-                        info...</cite>
-                </button>
-                <li>Streaming Service, such as, Netflix or YouTube TV</li>
-                <li>Streaming Device, such as, Roku Stick or Fire Stick</li>
-                <li>Email to use as username for your streaming service.</li>
-                <li>Bank Card for paid subscriptions, only.</li>
-            </ul>
+
+        <div class="row top-body">
+            <div class="col-lg-6">
+                <h2 class="text-center font-italic">Streaming Video and TV</h2>
+                <h3 class="text-left font-italic">How to ...</h3>
+                <p class="lead text-centered">A basic || core pathway to setup a streaming service:</p>
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li>Good Internet Connection, minimum of 5MB per device.</li>
+                    <blockquote class="blockquote-footer">Consumer Reports, "Streaming Media", Last updated: April 2018
+                    </blockquote>
+                    <button type="button" class="btn btn-secondary bg-success" data-container="body" data-toggle="popover"
+                        data-placement="top" data-content="You’ll Need a Speed of at Least 5 Mbps.  This is the absolute minimum to support a high-def stream, and that’s adequate only if you are streaming to one device at a time. Most homes will need 10 Mbps or more, and the FCC recently updated its definition of broadband to 25 Mbps. Note: Regardless of how fast your connection is, picture quality may initially be poor but then improve after a minute or so as the service adjusts to the connection speed. Also, if you’re connecting via WiFi, your router also needs to support a decent speed."><cite>more
+                            info...</cite>
+                    </button>
+                    <li>Streaming Service, such as, Netflix or YouTube TV</li>
+                    <li>Streaming Device, such as, Roku Stick or Fire Stick</li>
+                    <li>Email to use as username for your streaming service.</li>
+                    <li>Bank Card for paid subscriptions, only.</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="container" width="80%">
+    <div class="container middle-body" width="80%">
         <div class="row">
             <div class="col-lg-6 text-center mx-auto">
                 </div-->
                 <!-- email modal -->
-                <button id="emailButton" type="button" class="btn btn-primary pb-1 m-2 float-md-right" data-toggle="modal"
-                    data-target=".bd-example-modal-lg">EMAIL</button>
+                <button id="emailButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal" data-target=".bd-example-modal-lg">EMAIL</button>
 
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                     aria-hidden="true">
@@ -91,7 +94,7 @@
                     </div>
                 </div>
                 <!-- streaming services modal -->
-                <button id="serviceButton" type="button" class="btn btn-primary pb-1 m-2 float-md-right" data-toggle="modal"
+                <button id="serviceButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal"
                     data-target="#services">STREAMING SERVICES</button>
 
                 <div id="services" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -112,7 +115,7 @@
         <div class="row">
             <div class="col-lg-6 text-center mx-auto">
                 <!-- streaming devices modal -->
-                <button id="deviceButton" type="button" class="btn btn-primary pb-1 m-2 float-md-right" data-toggle="modal"
+                <button id="deviceButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal"
                     data-target="#devices">STREAMING DEVICES</button>
 
                 <div id="devices" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -132,7 +135,7 @@
                     </div>
                 </div>
                 <!-- informed decisons modal -->
-                <button id="informedButton" type="button" class="btn btn-primary pb-1 m-2 float-md-right" data-toggle="modal"
+                <button id="informedButton" type="button" class="btn btn-primary pb-1 m-2" data-toggle="modal"
                     data-target="#decisons">INFORMED DECISONS</button>
 
                 <div id="decisons" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -147,9 +150,7 @@
                             </div>
                             <h3>CNET</h3>
                             <h4>Roku Premiere Plus (2018) review:</h4>
-                            <blockquote class="blockquote-footer">David Katzmaier December 19, 2018 8:54 AM PST
-
-                            </blockquote>
+                            <blockquote class="blockquote-footer">David Katzmaier December 19, 2018 8:54 AM PST</blockquote>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe src="https://www.cnet.com/videos/share/which-roku-player-should-you-buy/" width="480"
                                     height="270" frameBorder="0" seamless="seamless" allowFullScreen></iframe>
@@ -174,19 +175,17 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="https://www.hulu.com/live-tv" target="_blank"><img src="img/Hulu_with_Live_TV.png" width="50%"
-                            class="img-fluid" alt="Responsive image"></a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://www.netflix.com/" target="_blank"><img src="img/Netflix.jpg" width="50%" class="img-fluid"
+                    <a href="https://www.hulu.com/live-tv" target="_blank"><img src="img/Hulu_with_Live_TV.png" class="img-fluid rounded"
                             alt="Responsive image"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="http://pluto.tv/" target="_blank"><img src="img/PlutoTV.jpg" width="50%" class="img-fluid"
-                            alt="Responsive image"></a>
+                    <a href="https://www.netflix.com/" target="_blank"><img src="img/Netflix.jpg" class="img-fluid rounded" alt="Responsive image"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="https://tv.youtube.com/" target="_blank"><img src="img/YouTubeTV.jpg" width="50%" class="img-fluid"
+                    <a href="http://pluto.tv/" target="_blank"><img src="img/PlutoTV.jpg" class="img-fluid rounded" alt="Responsive image"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://tv.youtube.com/" target="_blank"><img src="img/YouTubeTV.jpg" class="img-fluid rounded"
                             alt="Responsive image"></a>
                 </div>
             </div>
@@ -200,6 +199,10 @@
             </a>
         </div>
     </div>
+    <footer>
+        <h6 class="text-success">lastModified:</h6>
+        <h6 id="lastModified" class="text-success"></h6>
+    </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="bootstrap/node_modules/popper.js/dist/popper.min.js"></script>
