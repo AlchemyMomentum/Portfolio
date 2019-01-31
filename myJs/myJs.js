@@ -1,21 +1,14 @@
-
-
 //website last modified 
 var modify = document.lastModified;
-
 var modifyStyle = document.getElementById("lastModified");
 modifyStyle.innerHTML = modify;
 
+//-- Bootstrap Popover ---------------// 
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
 
-//clear cache website
-if(!lastModified)
-{
-  console.log("changes made");
-}
-else
-{
-  console.log("no changes");
-}
-  
-  
-
+// -- Bootstrap Carousel -----------------//
+$('.carousel').carousel({
+    interval: 20000
+})
