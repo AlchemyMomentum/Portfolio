@@ -3,6 +3,8 @@ var modify = document.lastModified;
 var modifyStyle = document.getElementById("lastModified");
 modifyStyle.innerHTML = modify;
 
+
+require('bootstrap');
 //-- Bootstrap Popover ---------------// 
 $(function () {
     $('[data-toggle="popover"]').popover()
