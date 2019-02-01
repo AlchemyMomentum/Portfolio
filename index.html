@@ -8,8 +8,7 @@
     <meta name="author" content="">
     <title>IoT | Index</title>
     <!-- Bootstrap core CSS -->
- 
-
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="myCSS/myCss.css" rel="stylesheet">
 </head>
@@ -131,9 +130,31 @@
     </div>
 
     <!-- BOOTSTRAP CORE JAVASCRIPT -->
-   
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+
+        // -- Bootstrap Carousel -----------------//
+        $('.carousel').carousel({
+            interval: 20000
+        })
+    </script>
+
     <!--my js -->
-    <script src="myJs.js"></script>
+    <script>
+        //website last modified 
+        var modify = document.lastModified;
+        var modifyStyle = document.getElementById("lastModified");
+        modifyStyle.innerHTML = modify;
+    </script>
 
 </body>
 
