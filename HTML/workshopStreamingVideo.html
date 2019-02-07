@@ -9,6 +9,8 @@
 
     <title>Streaming Media Workshop</title>
     <!-- Bootstrap core CSS -->
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="../myCSS/myCss.css" rel="stylesheet">
@@ -94,10 +96,12 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <!-- 16:9 aspect ratio -->
                                     <div class="card-body">
                                         <h5 class="card-title">Google Service Map || USA</h5>
-                                        <img src="../myIMG/googleMapUSA.PNG" class="img-fluid" alt="Responsive image">
+                                        <div>
+                                            <!--Zoom effect-->
+                                            <img src="../myIMG/googleMapUSA.PNG" class="img-fluid view zoom" alt="Responsive image">
+                                        </div>
                                     </div>
                                     <div class="card-footer">
                                         <a href="https://fiber.google.com/cities/louisville" target="_blank">
@@ -255,10 +259,13 @@
     </footer>
 
     <!-- BOOTSTRAP CORE JAVASCRIPT -->
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="../tooltip.js/dist/tooltip.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
     <script>
         $(function() {
             $('[data-toggle="popover"]').popover()
@@ -266,7 +273,9 @@
         $('.carousel').carousel({
             interval: 20000
         });
-
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
     </script>
     <!--my js -->
     <script>
@@ -274,7 +283,6 @@
         var modify = document.lastModified;
         var modifyStyle = document.getElementById("lastModified");
         modifyStyle.innerHTML = modify;
-
     </script>
 </body>
 
