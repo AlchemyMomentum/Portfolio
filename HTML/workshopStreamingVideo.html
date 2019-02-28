@@ -9,8 +9,6 @@
 
     <title>Streaming Media Workshop</title>
     <!-- Bootstrap core CSS -->
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="../myCSS/myCss.css" rel="stylesheet">
@@ -19,7 +17,6 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light-50 static-top rounded">
-
         <a class="navbar-brand" href="../HTML/IoT_Library.html">Internet of Things Library</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -112,11 +109,11 @@
                 </div>
             </div>
         </div>
-        <h6 class="m-2">Internet Service Providers(ISP):</h6>
         <div class="row">
-            <div class="col-lg-6 mt-4 mb-4">
+            <div class="col-md-3">
+                <h6>Internet Service Providers(ISP):</h6>
                 <!-- Large modal Spectrum -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-spectrum-modal-lg">SPECTRUM</button>
+                <button type="button" class="btn btn-success mt-2 mb-2 px-4" data-toggle="modal" data-target=".bd-spectrum-modal-lg">SPECTRUM</button>
                 <div class="modal fade bd-spectrum-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -145,12 +142,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 mt-4 mb-4">
                 <!-- Large modal AT&T-->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-att-modal-lg">AT-T</button>
+                <button type="button" class="btn btn-success px-4" data-toggle="modal" data-target=".bd-att-modal-lg">AT-T</button>
                 <div class="modal fade bd-att-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="card-group">
@@ -179,76 +173,121 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-md-3">
+                <h6>CORD CUTTING BASICS</h6>
+                <!-- Large modal cordcutting1 -->
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-cordcutting1-modal-lg">PART 1 AND PART 2 </button>
 
-        <h6 class="m-2">Cord Cutting Basics || Part 1 and Part 2</h6>
-        <!-- Large modal cordcutting1 -->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-cordcutting1-modal-lg">CORD CUTTING </button>
-
-        <div class="modal fade bd-cordcutting1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="card-group">
-                        <div class="card">
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s6xO8EJWR1I"></iframe>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cord Cutting Part 1</h5>
-                                <ol>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ol>
-                            </div>
-                            <div class="card-footer">
-                                <blockquote class="blockquote-footer">By Luke Bouma on December 7, 2018 in All News, How To, News</blockquote>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KOGcOemku8Y"></iframe>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cord Cutting Part 2</h5>
-                                <ol>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ol>
-                            </div>
-                            <div class="card-footer">
-                                <blockquote class="blockquote-footer">By Luke Bouma on December 12, 2018 in All News, Amazon News, Apple TV News, How To, News, Roku News </blockquote>
+                <div class="modal fade bd-cordcutting1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="card-group">
+                                <div class="card">
+                                    <!-- 16:9 aspect ratio -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s6xO8EJWR1I"></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cord Cutting Part 1</h5>
+                                        <ol>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ol>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote-footer">By Luke Bouma on December 7, 2018 in All News, How To, News</blockquote>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <!-- 16:9 aspect ratio -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KOGcOemku8Y"></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cord Cutting Part 2</h5>
+                                        <ol>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ol>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote-footer">By Luke Bouma on December 12, 2018 in All News, Amazon News, Apple TV News, How To, News, Roku News </blockquote>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-md-3">
+                <!-- Large modal streaming services -->
+                <button type="button" class="btn btn-success text-center" data-toggle="modal" data-target=".bd-slingtv-modal-lg">STREAMING SERVICES</button>
 
-        <h6 class="m-2">STREAMING SERVICES</h6>
-        <!-- Large modal streaming services -->
-        <button type="button" class="btn btn-success text-center" data-toggle="modal" data-target=".bd-slingtv-modal-lg">SLING TV</button>
-
-        <div class="modal fade bd-slingtv-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="card-group">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Sling Channel Line Up</h5>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <object class="embed-responsive-item" data="../myIMG/slingTVChannelLineUP.pdf">
-                                    </object>
+                <div class="modal fade bd-slingtv-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="card-group">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Sling Channel Line Up</h5>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <object class="embed-responsive-item" data="../myIMG/slingTVChannelLineUP.pdf">
+                                            </object>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="https://sling.com">
+                                                <blockquote class="blockquote-footer">Sling TV Website</blockquote>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-footer">
-                                    <a href="https://sling.com">
-                                        <blockquote class="blockquote-footer">Sling TV Website</blockquote>
-                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Large modal cordcutting1 -->
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-streamingDevices-modal-lg">STREAMING DEVICES</button>
+                <div class="modal fade bd-streamingDevices-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="card-group">
+                                <div class="card">
+                                    <!-- 16:9 aspect ratio -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K-jx725WHpU"></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">ROKU SETUP</h5>
+                                        <ol>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ol>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote-footer">--- --- </blockquote>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">FIRE STICK - AMAZON - COMING SOON</h5>
+                                        <ol>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ol>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote-footer">--- ----</blockquote>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +299,6 @@
             <h6 class="text-success">lastModified:</h6>
             <h6 id="lastModified" class="text-success"></h6>
         </footer>
-
         <!-- BOOTSTRAP CORE JAVASCRIPT -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
