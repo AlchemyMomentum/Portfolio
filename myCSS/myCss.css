@@ -35,7 +35,10 @@ footer
 {
     background-color:green;
 }
-
+#piper
+{
+    min-width: 50% ;
+}
 #charles-img
 {
    max-width: 50%;
