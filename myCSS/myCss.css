@@ -2,7 +2,10 @@
 body
 {
     font-family: 'Noto Serif', serif;
-    background-color:azure;
+    background-image: url("../myIMG/robert-katzki-119134-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:oldlace;
 }
 footer
 {
@@ -31,4 +34,10 @@ footer
 .carousel-control-next-icon
 {
     background-color:green;
+}
+
+#charles-img
+{
+   max-width: 50%;
+   max-height: 50%;
 }
